@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ProRoze - Checkout</title>
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Checkout CSS -->
+    <link rel="stylesheet" href="css/checkout.css">
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+<!-- ========================================
+     NAVBAR
+========================================= -->
+
+<nav class="navbar">
+
+    <div class="logo">
+        🌹 ProRoze
+    </div>
+
+
+    <!-- Hamburger Button -->
+
+    <button
+        class="menu-toggle"
+        id="menuToggle"
+        aria-label="Open navigation menu"
+    >
+        ☰
+    </button>
+
+
+    <!-- Navigation Links -->
+
+    <ul class="nav-links" id="navLinks">
+
+        <li>
+            <a href="index.html">
+                Home
+            </a>
+        </li>
+
+        <li>
+            <a href="products.html">
+                Flowers
+            </a>
+        </li>
+
+        <li>
+            <a href="products.html">
+                Plants
+            </a>
+        </li>
+
+        <li>
+            <a href="about.html">
+                About
+            </a>
+        </li>
+
+        <li>
+            <a href="contact.html">
+                Contact
+            </a>
+        </li>
+
+        <li>
+            <a href="cart.html">
+                Cart 🛒
+            </a>
+        </li>
+
+        <li>
+            <a href="login.html">
+                Login
+            </a>
+        </li>
+
+    </ul>
+
+</nav>
+
+    <!-- ================= CHECKOUT HEADER ================= -->
+
+    <section class="checkout-header">
+
+        <h1>🌹 Checkout</h1>
+
+        <p>
+            Complete your details to place your order
+        </p>
+
+    </section>
+
+
+    <!-- ================= CHECKOUT SECTION ================= -->
+
+    <section class="checkout-section">
+
+        <div class="checkout-container">
+
+
+            <!-- ================= CUSTOMER DETAILS ================= -->
+
+            <div class="customer-details">
+
+                <h2>Delivery Information</h2>
+
+                <form id="checkoutForm">
+
+                    <!-- Full Name -->
+
+                    <div class="form-group">
+
+                        <label for="name">
+                            Full Name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="name"
+                            placeholder="Enter your full name"
+                            required>
+
+                    </div>
+
+
+                    <!-- Email -->
+
+                    <div class="form-group">
+
+                        <label for="email">
+                            Email Address
+                        </label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            placeholder="Enter your email"
+                            required>
+
+                    </div>
+
+
+                    <!-- Phone -->
+
+                    <div class="form-group">
+
+                        <label for="phone">
+                            Mobile Number
+                        </label>
+
+                        <input
+                            type="tel"
+                            id="phone"
+                            placeholder="Enter your mobile number"
+                            maxlength="10"
+                            required>
+
+                    </div>
+
+
+                    <!-- Address -->
+
+                    <div class="form-group">
+
+                        <label for="address">
+                            Delivery Address
+                        </label>
+
+                        <textarea
+                            id="address"
+                            rows="4"
+                            placeholder="Enter your complete address"
+                            required></textarea>
+
+                    </div>
+
+
+                    <!-- City -->
+
+                    <div class="form-row">
+
+                        <div class="form-group">
+
+                            <label for="city">
+                                City
+                            </label>
+
+                            <input
+                                type="text"
+                                id="city"
+                                placeholder="Enter city"
+                                required>
+
+                        </div>
+
+
+                        <!-- Pincode -->
+
+                        <div class="form-group">
+
+                            <label for="pincode">
+                                Pincode
+                            </label>
+
+                            <input
+                                type="text"
+                                id="pincode"
+                                placeholder="6 digit pincode"
+                                maxlength="6"
+                                required>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- ================= PAYMENT ================= -->
+
+                    <h2 class="payment-heading">
+                        Payment Method
+                    </h2>
+
+
+                    <div class="payment-options">
+
+                        <label class="payment-option">
+
+                            <input
+                                type="radio"
+                                name="payment"
+                                value="cod"
+                                checked>
+
+                            <span>
+                                💵 Cash on Delivery
+                            </span>
+
+                        </label>
+
+
+                        <label class="payment-option">
+
+                            <input
+                                type="radio"
+                                name="payment"
+                                value="online">
+
+                            <span>
+                                💳 Online Payment
+                            </span>
+
+                        </label>
+
+                    </div>
+
+
+                    <!-- Place Order -->
+
+                    <button
+                        type="submit"
+                        class="place-order-btn">
+
+                        Place Order 🌹
+
+                    </button>
+
+                </form>
+
+            </div>
+
+
+            <!-- ================= ORDER SUMMARY ================= -->
+
+            <div class="checkout-summary">
+
+                <h2>Order Summary</h2>
+
+                <!-- Products will be displayed here -->
+
+                <div id="checkoutItems"></div>
+
+
+                <hr>
+
+
+                <div class="summary-row">
+
+                    <span>
+                        Subtotal
+                    </span>
+
+                    <span id="checkoutSubtotal">
+                        ₹0
+                    </span>
+
+                </div>
+
+
+                <div class="summary-row">
+
+                    <span>
+                        Delivery
+                    </span>
+
+                    <span>
+                        Free
+                    </span>
+
+                </div>
+
+
+                <hr>
+
+
+                <div class="checkout-total">
+
+                    <span>
+                        Total
+                    </span>
+
+                    <span id="checkoutTotal">
+                        ₹0
+                    </span>
+
+                </div>
+
+
+                <!-- Back to Cart -->
+
+                <a
+                    href="cart.html"
+                    class="back-cart">
+
+                    ← Back to Cart
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div class="footer-content">
+
+            <div class="footer-box">
+
+                <h3>🌹 ProRoze</h3>
+
+                <p>
+                    Bringing beautiful flowers and
+                    green plants to your doorstep.
+                </p>
+
+            </div>
+
+
+            <div class="footer-box">
+
+                <h3>Quick Links</h3>
+
+                <a href="index.html">Home</a>
+                <a href="products.html">Products</a>
+                <a href="cart.html">Cart</a>
+                <a href="login.html">Login</a>
+
+            </div>
+
+
+            <div class="footer-box">
+
+                <h3>Contact</h3>
+
+                <p>
+                    📧 support@proroze.com
+                </p>
+
+                <p>
+                    📞 +91 98765 43210
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <p class="copyright">
+            © 2026 ProRoze. All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+    <!-- Checkout JavaScript -->
+
+    <script src="js/checkout.js"></script>
+
+</body>
+</html>

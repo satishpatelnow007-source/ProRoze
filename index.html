@@ -1,0 +1,391 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ProRoze | Flowers & Plants</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+   <!-- ========================================
+     NAVBAR
+========================================= -->
+
+<nav class="navbar">
+
+    <div class="logo">
+        🌹 ProRoze
+    </div>
+
+
+    <!-- Hamburger Button -->
+
+    <button
+        class="menu-toggle"
+        id="menuToggle"
+        aria-label="Open navigation menu"
+    >
+        ☰
+    </button>
+
+
+    <!-- Navigation Links -->
+
+    <ul class="nav-links" id="navLinks">
+
+        <li>
+            <a href="index.html">
+                Home
+            </a>
+        </li>
+
+        <li>
+            <a href="products.html">
+                Flowers
+            </a>
+        </li>
+
+        <li>
+            <a href="products.html">
+                Plants
+            </a>
+        </li>
+
+        <li>
+            <a href="about.html">
+                About
+            </a>
+        </li>
+
+        <li>
+            <a href="contact.html">
+                Contact
+            </a>
+        </li>
+
+        <li>
+            <a href="cart.html">
+                Cart 🛒
+            </a>
+        </li>
+
+        <li>
+            <a href="login.html">
+                Login
+            </a>
+        </li>
+
+    </ul>
+
+</nav>
+
+    <!-- ================= HERO SECTION ================= -->
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <h1>
+                Bring Nature <br>
+                Into Your Life 🌷
+            </h1>
+
+            <p>
+                Beautiful flowers and fresh plants delivered
+                directly to your doorstep.
+            </p>
+
+            <a href="products.html" class="shop-btn">
+                Shop Now
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= CATEGORIES ================= -->
+    <section class="categories">
+
+        <h2>Shop By Category</h2>
+
+        <p class="section-text">
+            Explore our beautiful collection of flowers and plants.
+        </p>
+
+
+        <div class="category-container">
+
+            <div class="category-card">
+                <div class="category-icon">🌹</div>
+                <h3>Roses</h3>
+                <p>Beautiful roses for every occasion.</p>
+            </div>
+
+
+            <div class="category-card">
+                <div class="category-icon">💐</div>
+                <h3>Bouquets</h3>
+                <p>Special bouquets for your loved ones.</p>
+            </div>
+
+
+            <div class="category-card">
+                <div class="category-icon">🌷</div>
+                <h3>Tulips</h3>
+                <p>Fresh and colorful tulips.</p>
+            </div>
+
+
+            <div class="category-card">
+                <div class="category-icon">🪴</div>
+                <h3>Indoor Plants</h3>
+                <p>Make your home fresh and green.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FEATURED PRODUCTS ================= -->
+   <!-- ========================================
+     POPULAR PRODUCTS
+========================================= -->
+
+<section class="products-section">
+
+    <div class="section-title">
+
+        <h2>
+            Popular Products 🌹
+        </h2>
+
+        <p>
+            Fresh flowers and beautiful plants
+            for your home and loved ones.
+        </p>
+
+    </div>
+
+
+    <div class="product-grid">
+
+
+        <!-- Red Rose -->
+
+        <div class="product-card">
+
+            <div class="product-card-image">
+                🌹
+            </div>
+
+            <div class="product-card-info">
+
+                <span>
+                    Flower
+                </span>
+
+                <h3>
+                    Red Rose
+                </h3>
+
+                <p>
+                    Beautiful fresh red roses.
+                </p>
+
+                <div class="product-card-bottom">
+
+                    <strong>
+                        ₹299
+                    </strong>
+
+                    <button
+                        onclick="addToCart('Red Rose', 299)"
+                    >
+                        Add to Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- Pink Tulip -->
+
+        <div class="product-card">
+
+            <div class="product-card-image">
+                🌷
+            </div>
+
+            <div class="product-card-info">
+
+                <span>
+                    Flower
+                </span>
+
+                <h3>
+                    Pink Tulip
+                </h3>
+
+                <p>
+                    Elegant pink tulips for every occasion.
+                </p>
+
+                <div class="product-card-bottom">
+
+                    <strong>
+                        ₹399
+                    </strong>
+
+                    <button
+                        onclick="addToCart('Pink Tulip', 399)"
+                    >
+                        Add to Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- Indoor Plant -->
+
+        <div class="product-card">
+
+            <div class="product-card-image">
+                🪴
+            </div>
+
+            <div class="product-card-info">
+
+                <span>
+                    Plant
+                </span>
+
+                <h3>
+                    Indoor Plant
+                </h3>
+
+                <p>
+                    Beautiful plants for your home.
+                </p>
+
+                <div class="product-card-bottom">
+
+                    <strong>
+                        ₹499
+                    </strong>
+
+                    <button
+                        onclick="addToCart('Indoor Plant', 499)"
+                    >
+                        Add to Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- View All Products -->
+
+    <div class="view-products">
+
+        <a href="products.html">
+            View All Products →
+        </a>
+
+    </div>
+
+</section>
+
+
+    <!-- ================= WHY CHOOSE US ================= -->
+    <section class="why-us">
+
+        <h2>Why Choose ProRoze?</h2>
+
+        <div class="features">
+
+            <div>
+                <span>🌱</span>
+                <h3>Fresh Plants</h3>
+                <p>Fresh and healthy plants for your home.</p>
+            </div>
+
+
+            <div>
+                <span>🚚</span>
+                <h3>Fast Delivery</h3>
+                <p>Get your flowers delivered quickly.</p>
+            </div>
+
+
+            <div>
+                <span>💝</span>
+                <h3>Perfect Gifts</h3>
+                <p>Beautiful flowers for special moments.</p>
+            </div>
+
+
+            <div>
+                <span>💰</span>
+                <h3>Affordable Prices</h3>
+                <p>Quality products at reasonable prices.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+    <footer>
+
+        <div class="footer-content">
+
+            <h2>🌹 ProRoze</h2>
+
+            <p>
+                Bringing flowers, plants and happiness to your doorstep.
+            </p>
+
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="products.html">Products</a>
+                <a href="login.html">Login</a>
+                <a href="cart.html">Cart</a>
+            </div>
+
+        </div>
+
+        <p class="copyright">
+            © 2026 ProRoze. All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+    <!-- JavaScript -->
+    <script src="js/app.js"></script>
+
+</body>
+</html>
+

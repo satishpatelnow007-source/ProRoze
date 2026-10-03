@@ -1,0 +1,356 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ProRoze | Flowers & Plants</title>
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Products CSS -->
+    <link rel="stylesheet" href="css/products.css">
+
+</head>
+
+<body>
+
+
+    <!-- ================= NAVBAR ================= -->
+
+<!-- ========================================
+     NAVBAR
+========================================= -->
+
+<nav class="navbar">
+
+    <div class="logo">
+        🌹 ProRoze
+    </div>
+
+
+    <!-- Hamburger Button -->
+
+    <button
+        class="menu-toggle"
+        id="menuToggle"
+        aria-label="Open navigation menu"
+    >
+        ☰
+    </button>
+
+
+    <!-- Navigation Links -->
+
+    <ul class="nav-links" id="navLinks">
+
+        <li>
+            <a href="index.html">
+                Home
+            </a>
+        </li>
+
+        <li>
+            <a href="products.html">
+                Flowers
+            </a>
+        </li>
+
+        <li>
+            <a href="products.html">
+                Plants
+            </a>
+        </li>
+
+        <li>
+            <a href="about.html">
+                About
+            </a>
+        </li>
+
+        <li>
+            <a href="contact.html">
+                Contact
+            </a>
+        </li>
+
+        <li>
+            <a href="cart.html">
+                Cart 🛒
+            </a>
+        </li>
+
+        <li>
+            <a href="login.html">
+                Login
+            </a>
+        </li>
+
+    </ul>
+
+</nav>
+
+
+
+    <!-- ================= PAGE HEADER ================= -->
+
+    <section class="products-header">
+
+        <h1>
+            Flowers & Plants 🌷
+        </h1>
+
+        <p>
+            Find beautiful flowers and fresh plants
+            for every occasion.
+        </p>
+
+    </section>
+
+
+
+    <!-- ================= SEARCH & FILTER ================= -->
+
+    <section class="shop-controls">
+
+        <div class="search-box">
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search flowers or plants..."
+            >
+
+            <button onclick="searchProducts()">
+                🔍 Search
+            </button>
+
+        </div>
+
+
+        <div class="filter-box">
+
+            <button onclick="filterProducts('all')">
+                All
+            </button>
+
+            <button onclick="filterProducts('flower')">
+                🌸 Flowers
+            </button>
+
+            <button onclick="filterProducts('plant')">
+                🪴 Plants
+            </button>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= PRODUCTS ================= -->
+
+    <section class="products-section">
+
+        <div class="products-grid" id="productsGrid">
+
+
+            <!-- Product 1 -->
+
+            <div
+                class="shop-product"
+                data-category="flower"
+                data-name="Red Rose"
+            >
+
+                <div class="shop-product-image">
+                    🌹
+                </div>
+
+                <div class="product-info">
+
+                    <span class="product-category">
+                        Flower
+                    </span>
+
+                    <h3>
+                        Red Rose
+                    </h3>
+
+                    <p>
+                        Beautiful fresh red roses
+                        for special moments.
+                    </p>
+
+                    <div class="product-bottom">
+
+                        <span class="product-price">
+                            ₹299
+                        </span>
+
+                        <button
+                            onclick="addToCart('Red Rose', 299)"
+                        >
+                            🛒 Add
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- Product 2 -->
+
+            <div
+                class="shop-product"
+                data-category="flower"
+                data-name="Pink Rose"
+            >
+
+                <div class="shop-product-image">
+                    🌷
+                </div>
+
+                <div class="product-info">
+
+                    <span class="product-category">
+                        Flower
+                    </span>
+
+                    <h3>
+                        Pink Tulip
+                    </h3>
+
+                    <p>
+                        Fresh and colorful tulips
+                        for your loved ones.
+                    </p>
+
+                    <div class="product-bottom">
+
+    <strong>₹299</strong>
+
+    <button onclick="addToCart('Red Rose', 299)">
+        Add to Cart
+    </button>
+
+</div>
+
+<button
+    class="details-btn"
+    onclick="viewProduct(
+        'Red Rose',
+        299,
+        'Flower',
+        'images/red-rose.jpg',
+        'Beautiful fresh red roses for every special occasion.'
+    )"
+>
+    View Details
+</button>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- Product 3 -->
+
+            <div
+                class="shop-product"
+                data-category="flower"
+                data-name="Lily"
+            >
+
+                <div class="shop-product-image">
+                    🌸
+                </div>
+
+                <div class="product-info">
+
+                    <span class="product-category">
+                        Flower
+                    </span>
+
+                    <h3>
+                        White Lily
+                    </h3>
+
+                    <p>
+                        Elegant white lilies
+                        with a beautiful fragrance.
+                    </p>
+<button
+    class="details-btn"
+    onclick="viewProduct(
+        'Pink Tulip',
+        399,
+        'Flower',
+        'images/pink-tulip.jpg',
+        'Beautiful pink tulips perfect for gifts and home decoration.'
+    )"
+>
+    View Details
+</button>
+
+                </div>
+
+            </div>
+
+            <button
+    
+
+             Product 4 ></button>
+
+            <div
+                class="shop-product"
+                data-category="flower"
+                data-name="Sunflower"
+
+               </div>  
+
+                <div class="shop-product-image">
+                    🌻
+                </div>
+
+                <div class="product-info">
+
+                    <span class="product-category">
+                        Flower
+                    </span>
+
+                    <h3>
+                        Sunflower
+                    </h3>
+
+                    <p>
+                        Bright and cheerful sunflowers
+                        to light up your day.
+                    </p>
+
+                    <div class="product-bottom">
+
+                        <span class="product-price">
+                            ₹199
+                        </span>
+
+                        <button
+                            onclick="addToCart('Sunflower', 199)"
+                        >
+                            🛒 Add
+                        </button>
+
+                    </div>
+
+                </div>
+         
+            </div>

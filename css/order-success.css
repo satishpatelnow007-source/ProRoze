@@ -1,0 +1,428 @@
+/* ========================================
+   PRO ROZE ORDER SUCCESS CSS
+======================================== */
+
+
+/* ========================================
+   SUCCESS SECTION
+======================================== */
+
+.success-section {
+
+    min-height: 75vh;
+
+    padding: 60px 20px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #fff5f8,
+            #ffffff
+        );
+
+}
+
+
+/* ========================================
+   SUCCESS CONTAINER
+======================================== */
+
+.success-container {
+
+    max-width: 850px;
+
+    margin: auto;
+
+    background: white;
+
+    padding: 40px;
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 10px 30px
+        rgba(0, 0, 0, 0.10);
+
+}
+
+
+/* ========================================
+   SUCCESS ICON
+======================================== */
+
+.success-icon {
+
+    width: 80px;
+
+    height: 80px;
+
+    margin: 0 auto 20px;
+
+    border-radius: 50%;
+
+    background: #28a745;
+
+    color: white;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 45px;
+
+    font-weight: bold;
+
+}
+
+
+/* ========================================
+   HEADING
+======================================== */
+
+.success-container h1 {
+
+    text-align: center;
+
+    color: #d63384;
+
+    margin-bottom: 10px;
+
+}
+
+
+.success-message {
+
+    text-align: center;
+
+    color: #666;
+
+    font-size: 17px;
+
+    margin-bottom: 30px;
+
+}
+
+
+/* ========================================
+   ORDER ID
+======================================== */
+
+.order-id-box {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    background: #fff0f5;
+
+    padding: 18px 22px;
+
+    border-radius: 10px;
+
+    margin-bottom: 25px;
+
+}
+
+
+.order-id-box span {
+
+    color: #555;
+
+    font-weight: 600;
+
+}
+
+
+.order-id-box strong {
+
+    color: #d63384;
+
+    font-size: 18px;
+
+}
+
+
+/* ========================================
+   CUSTOMER BOX
+======================================== */
+
+.customer-box {
+
+    background: #fafafa;
+
+    padding: 25px;
+
+    border-radius: 12px;
+
+    margin-bottom: 25px;
+
+}
+
+
+.customer-box h2 {
+
+    margin-bottom: 18px;
+
+    color: #333;
+
+}
+
+
+.customer-box p {
+
+    margin: 10px 0;
+
+    color: #555;
+
+    line-height: 1.6;
+
+}
+
+
+.customer-box strong {
+
+    color: #333;
+
+}
+
+
+/* ========================================
+   ORDERED PRODUCTS
+======================================== */
+
+.ordered-products {
+
+    margin-bottom: 25px;
+
+}
+
+
+.ordered-products h2 {
+
+    color: #333;
+
+    margin-bottom: 15px;
+
+}
+
+
+.order-item {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 15px;
+
+    border-bottom: 1px solid #eee;
+
+}
+
+
+.order-item-info h4 {
+
+    margin: 0 0 5px;
+
+    color: #333;
+
+}
+
+
+.order-item-info p {
+
+    margin: 0;
+
+    color: #777;
+
+    font-size: 14px;
+
+}
+
+
+.order-item-price {
+
+    color: #d63384;
+
+    font-weight: bold;
+
+}
+
+
+/* ========================================
+   TOTAL
+======================================== */
+
+.order-total {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 20px;
+
+    border-top: 2px solid #f1d4df;
+
+    border-bottom: 2px solid #f1d4df;
+
+    margin-bottom: 30px;
+
+}
+
+
+.order-total span {
+
+    font-size: 18px;
+
+    font-weight: 600;
+
+    color: #333;
+
+}
+
+
+.order-total strong {
+
+    font-size: 24px;
+
+    color: #d63384;
+
+}
+
+
+/* ========================================
+   BUTTONS
+======================================== */
+
+.success-buttons {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 15px;
+
+}
+
+
+.continue-btn,
+.home-btn {
+
+    text-decoration: none;
+
+    padding: 13px 25px;
+
+    border-radius: 8px;
+
+    font-weight: 600;
+
+    transition: 0.3s;
+
+}
+
+
+.continue-btn {
+
+    background: #d63384;
+
+    color: white;
+
+}
+
+
+.continue-btn:hover {
+
+    background: #b82b70;
+
+}
+
+
+.home-btn {
+
+    background: #f5f5f5;
+
+    color: #333;
+
+}
+
+
+.home-btn:hover {
+
+    background: #e5e5e5;
+
+}
+
+
+/* ========================================
+   FOOTER
+======================================== */
+
+.footer {
+
+    text-align: center;
+
+}
+
+
+/* ========================================
+   RESPONSIVE
+======================================== */
+
+@media (max-width: 600px) {
+
+    .success-section {
+
+        padding: 30px 15px;
+
+    }
+
+
+    .success-container {
+
+        padding: 25px 18px;
+
+    }
+
+
+    .order-id-box {
+
+        flex-direction: column;
+
+        gap: 8px;
+
+        text-align: center;
+
+    }
+
+
+    .order-item {
+
+        gap: 10px;
+
+    }
+
+
+    .success-buttons {
+
+        flex-direction: column;
+
+    }
+
+
+    .continue-btn,
+    .home-btn {
+
+        text-align: center;
+
+        width: 100%;
+
+    }
+
+}

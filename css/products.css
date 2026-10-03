@@ -1,0 +1,382 @@
+
+
+.products-header {
+    padding: 70px 5%;
+    text-align: center;
+    background: linear-gradient(
+        135deg,
+        #fff0f5,
+        #fff8f0
+    );
+}
+
+.products-header h1 {
+    font-size: 45px;
+    color: #8e3157;
+    margin-bottom: 15px;
+}
+
+.products-header p {
+    color: #777;
+    font-size: 18px;
+}
+
+
+/* =========================
+   SHOP CONTROLS
+========================= */
+
+.shop-controls {
+    padding: 35px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+    flex-wrap: wrap;
+    background-color: #ffffff;
+}
+
+
+/* =========================
+   SEARCH BOX
+========================= */
+
+.search-box {
+    display: flex;
+    width: 450px;
+    max-width: 100%;
+}
+
+.search-box input {
+    flex: 1;
+    height: 48px;
+    padding: 0 15px;
+    border: 1px solid #ddd;
+    border-right: none;
+    border-radius: 8px 0 0 8px;
+    outline: none;
+    font-size: 15px;
+}
+
+.search-box input:focus {
+    border-color: #d6336c;
+}
+
+.search-box button {
+    width: 100px;
+    border: none;
+    border-radius: 0 8px 8px 0;
+    background-color: #d6336c;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.search-box button:hover {
+    background-color: #a61e4d;
+}
+
+
+/* =========================
+   FILTER BUTTONS
+========================= */
+
+.filter-box {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.filter-box button {
+    padding: 11px 20px;
+    border: 1px solid #d6336c;
+    border-radius: 25px;
+    background-color: white;
+    color: #d6336c;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.filter-box button:hover,
+.filter-box button.active {
+    background-color: #d6336c;
+    color: white;
+}
+
+
+/* =========================
+   PRODUCTS SECTION
+========================= */
+
+.products-section {
+    padding: 30px 8% 80px;
+    background-color: #fffafa;
+}
+
+
+/* =========================
+   PRODUCTS GRID
+========================= */
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+
+/* =========================
+   PRODUCT CARD
+========================= */
+
+.shop-product {
+    background-color: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.07);
+    transition: 0.3s;
+}
+
+.shop-product:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
+}
+
+
+/* =========================
+   PRODUCT IMAGE
+========================= */
+
+.shop-product-image {
+    height: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(
+        135deg,
+        #fff0f5,
+        #fff8f0
+    );
+    font-size: 100px;
+}
+
+
+/* =========================
+   PRODUCT INFORMATION
+========================= */
+
+.product-info {
+    padding: 22px;
+}
+
+.product-category {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 15px;
+    background-color: #fff0f5;
+    color: #d6336c;
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.product-info h3 {
+    font-size: 21px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.product-info p {
+    color: #777;
+    font-size: 14px;
+    line-height: 1.6;
+    min-height: 45px;
+}
+
+
+/* =========================
+   PRODUCT BOTTOM
+========================= */
+
+.product-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.product-price {
+    color: #d6336c;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.product-bottom button {
+    border: none;
+    padding: 10px 15px;
+    border-radius: 20px;
+    background-color: #d6336c;
+    color: white;
+    font-size: 13px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.product-bottom button:hover {
+    background-color: #a61e4d;
+    transform: scale(1.04);
+}
+
+
+/* =========================
+   NO PRODUCTS
+========================= */
+
+.no-products {
+    display: none;
+    text-align: center;
+    padding: 60px 20px;
+    color: #777;
+    font-size: 20px;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 1100px) {
+
+    .products-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .shop-controls {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+}
+
+
+/* =========================
+   SMALL TABLET
+========================= */
+
+@media (max-width: 800px) {
+
+    .products-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .shop-controls {
+        justify-content: center;
+    }
+
+    .search-box {
+        width: 100%;
+    }
+
+    .filter-box {
+        justify-content: center;
+    }
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 550px) {
+
+    .products-header {
+        padding: 50px 5%;
+    }
+
+    .products-header h1 {
+        font-size: 32px;
+    }
+
+    .products-header p {
+        font-size: 15px;
+        line-height: 1.6;
+    }
+
+    .shop-controls {
+        padding: 25px 5%;
+    }
+
+    .search-box {
+        width: 100%;
+    }
+
+    .search-box button {
+        width: 85px;
+    }
+
+    .filter-box {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .filter-box button {
+        padding: 9px 15px;
+    }
+
+    .products-section {
+        padding: 20px 5% 60px;
+    }
+
+    .products-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .shop-product-image {
+        height: 200px;
+    }
+}
+
+
+
+/* ========================================
+   VIEW DETAILS BUTTON
+======================================== */
+
+.details-btn {
+
+    width: 100%;
+
+    margin-top: 10px;
+
+    padding: 11px;
+
+    border: 2px solid #d63384;
+
+    border-radius: 8px;
+
+    background: white;
+
+    color: #d63384;
+
+    font-size: 15px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+
+}
+
+
+.details-btn:hover {
+
+    background: #d63384;
+
+    color: white;
+
+    transform: translateY(-2px);
+
+}
